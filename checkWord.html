@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiếm tra ký tự số</title>
+</head>
+<body>
+<h1> Kiếm tra ký tự số hay không?</h1>
+<label>nhập vào đây để kiểm tra </label>
+<input type="text" id="input" >
+<button onclick="check()" type="button"> Check </button>
+
+<script>
+  function check(val){
+            val = document.getElementById('input').value;
+            if(isNaN(val)){
+              document.write('false');
+              return false;
+            } else
+              document.write('true');
+  }
+</script>
+
+</body>
+</html>

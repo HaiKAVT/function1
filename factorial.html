@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giai Thừa của một số nguyên</title>
+</head>
+<body>
+<h1> Tính giai thừa của một số nguyên nhập từ bàn phím </h1>
+<input type="number" id="inputNum" name="giaiThua"
+onchange="factorial(this.value)"
+oninput="factorial(this.value)">
+<div id="output"></div>
+<script>
+  function factorial(n){
+    n = parseInt(n);
+    let giaiThua = 1;
+    for(let i =1 ; i<=n;i++){
+      giaiThua = giaiThua*i;
+    }
+    document.getElementById('output').innerHTML = giaiThua;
+  }
+</script>
+</body>
+</html>

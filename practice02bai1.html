@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Tinh binh phuong cua mot so </title>
+</head>
+<body>
+<h1> Tính Bình Phương </h1>
+<input type="number" id="inputNum" name="click"
+       onchange="square(this.value)"
+       oninput="square(this.value)" >
+<div id="output"></div>
+<script>
+ // let a = +prompt("nhập vào một số mà bạn cần tính bình phương : ");
+function square(a){
+    a = parseInt(a);
+   document.getElementById('output').innerHTML = a*a;
+
+}
+</script>
+</body>
+</html>

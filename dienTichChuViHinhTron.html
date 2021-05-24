@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính diện tích , chu vi của hình tròn </title>
+</head>
+<body>
+<h1> Tính Diện tích và chu vi của hình tròn</h1>
+<p>
+  <label>Bán Kính </label>
+  <input type="number" id="inputNum" name="chuVi"
+         oninput="A()"
+         onchange="A()">
+
+</p>
+<!--<input type="number" id="inputNum" name="chuVi"-->
+<!--       oninput="chuVi(this.value)"-->
+<!--       onchange="chuVi(this.value)">-->
+
+
+<div id="output">
+</div>
+
+<div id="kqua"></div>
+<script>
+function A(){
+  chuVi();
+  dienTich()
+}
+  r = document.getElementById("inputNum");
+  function chuVi(){
+     // r = parseFloat(r);
+    document.getElementById('output').innerHTML = "Chu vi hình tròn là : " + 2*r.value*3.14;
+  }
+  function dienTich(){
+    // r = parseFloat(r);
+    document.getElementById('kqua').innerHTML = "Diện tích hình tròn là : " + 3.14*r.value*r.value;
+  }
+</script>
+</body>
+</html>
